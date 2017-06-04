@@ -1,0 +1,133 @@
+@media screen and (max-width: 1575px) {
+  .profile-pic {
+    height: 100px;
+    width: 100px;
+  }
+  li img {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+  }
+  a {
+    font-size: 12px;
+  }
+  aside article h2 {
+    font-size: 17px;
+  }
+  .pie-charts #pie1,
+  .pie-charts #pie2,
+  .pie-charts #pie3 {
+    height: 130px;
+    margin: 0 20px 0 20px;
+    width: 130px;
+  }
+  article#pie1 p:nth-of-type(1),
+  article#pie2 p:nth-of-type(1),
+  article#pie3 p:nth-of-type(1) {
+    font-size: 30px;
+  }
+  article#pie1 p:nth-of-type(2),
+  article#pie2 p:nth-of-type(2),
+  article#pie3 p:nth-of-type(2) {
+    font-size: 12px;
+  }
+  .pie-container button,
+  .graph-container button {
+    font-size: 12px;
+  }
+  .graph-container img {
+    height: 195px;
+  }
+  thead button {
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .profile-pic {
+    height: 90px;
+    width: 90px;
+  }
+  li img {
+    height: 12px;
+    width: 12px;
+  }
+  a {
+    font-size: 11px;
+  }
+  aside article h2 {
+    font-size: 15px;
+  }
+  article:nth-of-type(2),
+  article:nth-of-type(3),
+  article:nth-of-type(4) {
+    padding-left: 15px;
+  }
+  .tabs li {
+    margin-right: 50px;
+  }
+  .pie-charts #pie1,
+  .pie-charts #pie2,
+  .pie-charts #pie3 {
+    height: 120px;
+    margin: 0 15px 0 15px;
+    width: 120px;
+  }
+  article#pie1 p:nth-of-type(1),
+  article#pie2 p:nth-of-type(1),
+  article#pie3 p:nth-of-type(1) {
+    font-size: 25px;
+  }
+  article#pie1 p:nth-of-type(2),
+  article#pie2 p:nth-of-type(2),
+  article#pie3 p:nth-of-type(2) {
+    font-size: 11px;
+  }
+  .pie-container button,
+  .graph-container button {
+    font-size: 11px;
+  }
+  .pie-container button {
+    width: 33%;
+  }
+  .graph-container button {
+    width: 28%;
+  }
+  .graph-container img {
+    height: 180px;
+    margin-bottom: 15px;
+  }
+  thead button {
+    width: 25%;
+    font-size: 13px;
+  }
+  .media-container-logo {
+    height: 20px;
+    margin-right: 20%;
+    width: 20px;
+  }
+  .media-container button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  aside {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .hamburger-container {
+    width: 10%;
+  }
+  .search-container {
+    width: 65%;
+  }
+  .extra-search-features {
+    width: 26%;
+  }
+}

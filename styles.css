@@ -45,6 +45,9 @@ a {
 a:hover {
   color: rgb(19,164,250);
 }
+button {
+  outline: none;
+}
 button:hover {
   cursor: pointer;
 }
@@ -148,8 +151,10 @@ header {
   display: flex;
   align-items: center;
   flex-direction: row;
-  height: 5vh;
+  height: 6vh;
   border: 2px solid rgba(114, 123, 132, 0.1);
+  border-left: 0;
+  border-top: 0;
 }
 .top-nav div {
   height: 100%;
@@ -299,16 +304,12 @@ h1 {
 
 /*TABS*/
 
-.tabs {
-  width: 90%;
-}
 .tabs ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   height: 100%;
   margin: 0;
-  width: 100%;
 }
 .tabs li {
   display: flex;
@@ -317,12 +318,12 @@ h1 {
   height: 45px;
   margin: 0 60px 0 0;
   color: rgb(153,158,178);
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   font-size: 13px;
   font-weight: 700;
 }
 .tabs li:hover {
-  border-bottom: 2px solid rgb(19,164,250);
+  border-bottom: 3px solid rgb(19,164,250);
   color: rgb(114,123,132);
 }
 
@@ -437,7 +438,7 @@ article#pie3 p:nth-of-type(2) {
   border: 2px solid #d5d7e2;
   border-radius: 20px 20px;
   color: #727b84;
-  font size: 15px;
+  font-size: 15px;
   font-family: inherit;
   font-weight: 700;
 }
@@ -562,7 +563,7 @@ th:nth-of-type(2) {
 }
 thead button {
   height: 45px;
-  width: 15%;
+  width: 20%;
   background-color: rgb(95, 106, 136);
   border: none;
   color: #FFFFFF;
@@ -674,14 +675,14 @@ h5 {
   align-items: center;
   margin-bottom: 15px;
   color: #727b84;
-  font-size: 22px;
+  font-size: 20px;
 }
 .media-container-1 img,
 .media-container-2 img,
 .media-container-3 img {
-  height: 25px;
+  height: 20px;
   margin-right: 10px;
-  width: 25px;
+  width: 20px;
 }
 
 .media-container-1 p,
@@ -700,15 +701,16 @@ h5 {
   margin-bottom: 30px;
   padding: 0 0 0 20px;
   width: 70%;
-  border: 1px solid #727b84;
+  border: 1px solid rgba(114, 123, 132,0.2);
   border-right: none;
   color: #727b84;
   font-size: 14px;
+  outline: none;
   text-overflow: ellipsis;
 }
 .media-container-3 input {
   width: 92%;
-  border-right: 1px solid #727b84;
+  border-right: 1px solid rgba(114, 123, 132,0.2);
 }
 .media-container-1 button,
 .media-container-2 button,
