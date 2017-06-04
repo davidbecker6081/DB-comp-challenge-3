@@ -298,6 +298,14 @@ h1 {
   background-size: 50%;
   background-position: center;
 }
+.edit button.pages-btn {
+  display: none;
+  width: 120px;
+  color: rgb(153,158,178);
+  background: none;
+  border-radius: 30px 30px;
+  font-weight: 700;
+}
 .edit button:hover {
   background-color: rgba(19,164,250,0.5);
 }
