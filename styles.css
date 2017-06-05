@@ -14,7 +14,7 @@ h2 {
   font-weight: 400;
 }
 h4 {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   color: rgb(86,99,119);
   font-size: 16px;
 }
@@ -26,7 +26,7 @@ ul {
 li {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 li:hover {
   cursor: pointer;
@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(19,164,250);
+  color: #FFFFFF;
 }
 button {
   outline: none;
@@ -59,6 +59,45 @@ aside {
   flex-direction: column;
   width: 15%;
   background-color: rgb(53,64,82);
+}
+aside li {
+  padding: 10px 0;
+  position: relative;
+  border-left: 4px solid transparent;
+}
+aside li:hover {
+  animation-name: asideAnimate;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  color: #FFFFFF;
+}
+@keyframes asideAnimate {
+  0% {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(45,56,74,0);
+    border-left: 1px solid rgb(19,164,250);
+  }
+  25% {
+    color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(45,56,74,0.2);
+    border-left: 1.5px solid rgb(19,164,250);
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(45,56,74,0.4);
+    border-left: 2px solid rgb(19,164,250);
+  }
+  75% {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(45,56,74,0.6);
+    border-left: 3px solid rgb(19,164,250);
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(45,56,74,1);
+    border-left: 4px solid rgb(19,164,250);
+  }
 }
 
 /*FIRST ARTICLE*/
@@ -101,8 +140,12 @@ aside article h2 {
 article:nth-of-type(2) {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0 25px;
+  padding-top: 20px;
   border-bottom: 2px solid rgb(45,56,74);
+}
+article:nth-of-type(2) img,
+h4 {
+  margin-left: 25px;
 }
 
 /*THIRD ARTICLE*/
@@ -110,8 +153,12 @@ article:nth-of-type(2) {
 article:nth-of-type(3) {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0 25px;
+  padding-top: 20px;
   border-bottom: 2px solid rgb(45,56,74);
+}
+article:nth-of-type(3) img,
+h4 {
+  margin-left: 25px;
 }
 
 /*FOURTH ARTICLE*/
@@ -121,13 +168,25 @@ article:nth-of-type(4) {
   flex-direction: column;
   padding: 20px 0 0 25px;
 }
+article:nth-of-type(4) h4 {
+  margin-left: 0;
+}
 input[type=checkbox] {
   margin-right: 15px;
 }
+input:focus {
+  outline: none;
+}
 label {
+  margin-right: 5px;
   color: rgb(165,176,194);
   font-size: 11px;
   font-weight: 700;
+}
+article:nth-of-type(4) li:hover {
+  background: rgb(53,64,82);
+  border-left: 4px solid transparent;
+  animation: none;
 }
 
 /*MAIN*/
@@ -173,6 +232,7 @@ header {
 .hamburger-container:hover {
   background-color: rgb(19,164,250);
   cursor: pointer;
+  zoom: 130%;
 }
 .hamburger-container .burger-arrow {
   height: 10px;
@@ -207,6 +267,9 @@ header {
 .extra-search-features div:hover {
   background-color: rgb(19,164,250);
   cursor: pointer;
+  transform: rotate(10deg);
+  transition-duration: 0.7s;
+  zoom: 130%;
 }
 /*BOTTOM NAV*/
 
@@ -330,6 +393,10 @@ h1 {
   font-size: 13px;
   font-weight: 700;
 }
+.tabs li:nth-of-type(1) {
+  border-bottom: 3px solid rgb(19,164,250);
+  color: rgb(114,123,132);
+}
 .tabs li:hover {
   border-bottom: 3px solid rgb(19,164,250);
   color: rgb(114,123,132);
@@ -350,6 +417,22 @@ div.pie-charts {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+}
+.pie-charts #pie1:hover,
+.pie-charts #pie2:hover,
+.pie-charts #pie3:hover {
+  animation: pieTurn 2s linear infinite;
+}
+@keyframes pieTurn {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*PIE 1*/

@@ -51,6 +51,9 @@
     height: 90px;
     width: 90px;
   }
+  h4 {
+    font-size: 15px;
+  }
   li img {
     height: 12px;
     width: 12px;
@@ -60,11 +63,6 @@
   }
   aside article h2 {
     font-size: 15px;
-  }
-  article:nth-of-type(2),
-  article:nth-of-type(3),
-  article:nth-of-type(4) {
-    padding-left: 15px;
   }
   .tabs li {
     font-size: 12px;
@@ -118,6 +116,13 @@
 @media screen and (max-width: 1150px) {
   aside {
     display: none;
+  }
+  header {
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    background-color: #FFFFFF;
   }
   main {
     width: 100%;
@@ -319,7 +324,7 @@
     background-image: url('assets/calendar (1).svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 16%;
+    background-size: 17%;
     border-right: none;
   }
   .top-nav img {
@@ -395,6 +400,9 @@
 @media screen and (max-width: 600px) {
   .bottom-nav {
     padding: 25px 20px 0 20px;
+  }
+  .extra-search-features div:nth-last-of-type(1) {
+    background-size: 20%;
   }
   .edit {
     margin: 0 auto 20px auto;
@@ -496,20 +504,28 @@
     font-size: 13px;
   }
   .edit {
-    margin: 0 auto 10px auto;
+    margin: 0 50px 10px 50px;
     width: 90%;
   }
   .edit button:nth-of-type(1) {
-    width: 30%;
+    margin-right: 5px;
+    width: 40%;
   }
   .edit button.pages-btn {
-    width: 30%;
+    margin-left: 5px;
+    width: 40%;
+  }
+  .edit button:nth-of-type(2),
+  .edit button:nth-of-type(3),
+  .edit button:nth-of-type(4) {
+    margin: 0 5px 15px 5px;
   }
   .pie-container {
     padding-top: 30px;
   }
   div.pie-charts {
     flex-direction: column;
+    margin-bottom: 15px;
   }
   .pie-charts #pie1,
   .pie-charts #pie2,
@@ -550,5 +566,19 @@
   }
   .media-container button {
     padding: 15px 20px;
+  }
+  .media-container-1 img,
+  .media-container-2 img,
+  .media-container-3 img {
+    height: 15px;
+    width: 15px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .media-container-1 p,
+  .media-container-2 p,
+  .media-container-3 p {
+   font-size: 12px;
   }
 }
