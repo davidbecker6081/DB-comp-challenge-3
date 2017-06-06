@@ -172,7 +172,28 @@ article:nth-of-type(4) h4 {
   margin-left: 0;
 }
 input[type=checkbox] {
-  margin-right: 15px;
+  -webkit-appearance: none;
+  position: relative;
+  margin-right: 12px;
+  padding: 8px;
+}
+input[type=checkbox]:checked:after {
+  content: '\2714';
+  position: absolute;
+  left: 2px;
+  top: 0px;
+}
+.yellowChk {
+  background-color: rgb(252,218,4);
+}
+.blueChk {
+  background-color: rgb(19,164,250);
+}
+.redChk {
+  background-color: rgb(231,27,97);
+}
+.greenChk {
+  background-color: rgb(1, 171, 137);
 }
 input:focus {
   outline: none;
